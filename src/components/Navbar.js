@@ -5,7 +5,7 @@ const Navbar = ()  => {
     return (
         <nav className='navbar navbar-expand-sm navbar-light bg-light'>
            <Link to='/' className='navbar-brand'> 
-               <img  src ={logo} alt='logo'/>
+               My-Recipes
            </Link>
 
            <div className='collapse navbar-collapse show ml-sm-5'>

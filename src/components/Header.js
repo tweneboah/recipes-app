@@ -9,7 +9,7 @@ const Header = ({children, title, styleClass}) =>  {
                   <h1 className='text-light text-uppercase display-3 letter-spacing text-slanted'>
                   {title}
                   </h1>
-                  {/* Children */}
+                 
                   {children}
               </div>
            </div>
