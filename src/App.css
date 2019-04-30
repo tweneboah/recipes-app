@@ -3,7 +3,7 @@ body {
 }
 
 .text-slanted {
-  font-family: 'Courgette', cursive; 
+  font-family: 'Lobster', cursive;
 }
 
 .text-orange {
@@ -12,6 +12,7 @@ body {
 
 .letter-spacing {
   letter-spacing: 0.5rem;
+  color: rgb(232, 240, 232);
 }
 
 .header-hero,

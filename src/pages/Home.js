@@ -5,10 +5,12 @@ class Home extends Component {
    
     render() { 
         return (
-            <Header title='Amazing Recipes'>
+            <Header title='Outstanding Recipes'>
               <Link to='/recipes' className='text-uppercase btn btn-success btn-lg mt-3'>
-              Search Recipes
+              Search Recipes 
               </Link>
+             <p className='display-4 text-warning'>{new Date().toLocaleTimeString()}</p> 
+             
             </Header>
         )
             
