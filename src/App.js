@@ -19,8 +19,9 @@ class App extends React.Component {
           <Navbar/>
           <Switch>
              <Route path ='/' exact component ={HomePage}/>
-             <Route path ='/recipes' component ={RecipesPage}/>
              <Route path ='/recipes/:id' component ={SingleRecipePage}/>
+             <Route path ='/recipes' component ={RecipesPage}/>
+            
              <Route  component ={DefaultPage}/>
           </Switch>
         </main>

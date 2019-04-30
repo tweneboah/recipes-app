@@ -25,7 +25,7 @@ class SearchComponent extends Component {
                </div>
 
              </div>
-                Hello from search
+                
             </div>
          );
     }
