@@ -1,13 +1,12 @@
 import React  from 'react'
-import logo from '../images/logo.svg';
 import {Link} from 'react-router-dom';
-const Navbar = ()  => {
+const NavbarComponent = ()  => {
     return (
         <nav className='navbar navbar-expand-sm navbar-light bg-light'>
-           <Link to='/' className='navbar-brand'> 
-               My-Recipes
+           <Link to='/' className='navbar-brand text-success'> 
+           <h1 className='text-slanted'><strong className='text-orange'>My-Recipes</strong></h1>
            </Link>
-
+         
            <div className='collapse navbar-collapse show ml-sm-5'>
              <ul className='navbar-nav'>
                  <li className='navbar-item'>
@@ -27,4 +26,4 @@ const Navbar = ()  => {
     )
 }
 
-export default Navbar;
+export default NavbarComponent;

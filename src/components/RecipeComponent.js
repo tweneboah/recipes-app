@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-
-class Search extends Component {
-    
+class RecipeComponent extends Component {
+    state = {  }
     render() { 
         return ( 
             <div>
-                FROM SEARCH
+                Hell from Recipe
             </div>
          );
     }
 }
  
-export default Search;
+export default RecipeComponent;

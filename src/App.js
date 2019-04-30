@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from './pages/Home';
-import Recipes from './pages/Recipes';
-import SingleRecipe from './pages/SingleRecipePage'
+import HomePage from './pages/HomePage';
+import RecipesPage from './pages/RecipesPage';
+import SingleRecipePage from './pages/SingleRecipePage'
 import DefaultPage from './pages/DefaultPage';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Navbar from './components/Navbar';
+import Navbar from './components/NavbarComponent';
 
 class App extends React.Component {
 
@@ -18,9 +18,9 @@ class App extends React.Component {
           {/* navbar */}
           <Navbar/>
           <Switch>
-             <Route path ='/' exact component ={Home}/>
-             <Route path ='/recipes' component ={Recipes}/>
-             <Route path ='/recipes/:id' component ={SingleRecipe}/>
+             <Route path ='/' exact component ={HomePage}/>
+             <Route path ='/recipes' component ={RecipesPage}/>
+             <Route path ='/recipes/:id' component ={SingleRecipePage}/>
              <Route  component ={DefaultPage}/>
           </Switch>
         </main>

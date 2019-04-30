@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = ({children, title, styleClass}) =>  {
+const HeaderComponent = ({children, title, styleClass}) =>  {
     return (
      <header>
          <div className='container-fluid'>
@@ -9,8 +9,8 @@ const Header = ({children, title, styleClass}) =>  {
                   <h1 className='display-3 letter-spacing text-slanted'>
                   {title}
                   </h1>
-                 
-                  {children}
+                 {children}
+                
               </div>
            </div>
          </div>
@@ -18,9 +18,9 @@ const Header = ({children, title, styleClass}) =>  {
     )
 }
  
-export default Header;
+export default HeaderComponent;
 
-Header.defaultProps = {
+HeaderComponent.defaultProps = {
     title: 'Default title',
     styleClass: 'header-hero'
 };
