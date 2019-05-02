@@ -15,7 +15,9 @@ class SingleRecipePage extends Component {
     }
 
    async componentDidMount() {
-        const url = `https://www.food2fork.com/api/get?key=${process.env.REACT_APP_API_KEY}&rId=${this.state.id}`;
+        const url = `https://www.food2fork.com/api/get?key=c099484d609b9f38cb5afb78bf113c12&rId=${this.state.id}`;
+
+        
 
         try {
             const response = await fetch(url);
@@ -24,14 +26,14 @@ class SingleRecipePage extends Component {
                 recipe: responseData.recipe,
                  loading: false
             })
-            console.log(responseData)
+            
         }catch (error) {
-            console.log(error)
+          
         }
     }
 
     render() { 
-        console.log(this.response)
+       
         //DESTRUCTURING
         const {image_url, publisher_url, source_url, title, ingredients, publisher} = this.state.recipe
 

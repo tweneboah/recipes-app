@@ -5,8 +5,10 @@ import HomePage from './pages/HomePage';
 import RecipesPage from './pages/RecipesPage';
 import SingleRecipePage from './pages/SingleRecipePage'
 import DefaultPage from './pages/DefaultPage';
+import FooterComponent from './components/FooterComponent'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Navbar from './components/NavbarComponent';
+import NavbarComponent from './components/NavbarComponent';
 
 class App extends React.Component {
 
@@ -25,6 +27,7 @@ class App extends React.Component {
              <Route  component ={DefaultPage}/>
           </Switch>
         </main>
+      <FooterComponent/>
       </Router>
      );
   }
